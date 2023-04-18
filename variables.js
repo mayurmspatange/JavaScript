@@ -29,4 +29,40 @@ console.log("Addition of t  + u = ", o);
 // const variable
 
 const PI = 3.14;
-// PI = 56;
+
+
+// ++PI;
+
+console.log("const value",PI);
+
+
+
+var abc = 40;
+console.log("var a before redeclare", abc);
+
+
+var abc = 30;
+
+console.log("var a redeclare", abc);
+
+
+
+let abcd = 40;
+console.log("var a before redeclare", abcd);
+
+// Cannot redeclare block-scoped variable 'abcd'.ts(2451)
+    // SyntaxError: Identifier 'abcd' has already been declared
+// let abcd = 30;
+
+console.log("var a redeclare", abcd);
+
+// var x1 = 10;
+
+{
+ var x1 = 10;
+
+}
+
+
+// ReferenceError: x1 is not defined
+console.log("x1 is ", x1);
