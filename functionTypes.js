@@ -19,7 +19,7 @@ result = 3.14 * radius * radius;
 console.log("areaOfCircle 15 is: ",result);
 
 
-// 1. function wiht no parameters and no return type;
+// 1. function with no parameters and no return type;
 
 // functon defination;
 function area(){
