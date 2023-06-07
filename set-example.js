@@ -18,6 +18,7 @@ animal.add("Lion");
 animal.add("rabbit");
 animal.add("Zebra");
 animal.add("sneks");
+animal.add("Monkey");  //dublicate entry 
 
 // arr.length  array 
 
