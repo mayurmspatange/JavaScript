@@ -48,3 +48,19 @@ let std3 = new Students("Vishakha",24,"000000","pune")
 std1.displayData();
 std2.displayData();
 std3.displayData();
+
+
+class MathUtils {
+
+    constructor(rds){
+        this.rds = rds;
+    }
+
+    areaOfCircle() {
+        console.log("Area of Circle: ",3.14 * this.rds * this.rds);
+    }
+}
+
+let circle = new MathUtils(5);
+
+circle.areaOfCircle();
