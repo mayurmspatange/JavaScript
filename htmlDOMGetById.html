@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElementGetByID</title>
+
+</head>
+<body>    
+    <div>
+        <h1 id="firstEle">this is example of GetElementById</h1>
+         <button onclick="chnageAttribute()" >Click me to change</button>
+    </div>
+
+
+<script>
+    // // 1 st method
+    // setTimeout(() => {
+    //     let h1 = document.getElementById("firstEle");
+    //     h1.innerHTML = "This is JavaScript";   //innerhtml
+    //     h1.style.color = "red";  // css 
+    //     h1.style.fontSize= "50px" // css
+    //     h1.setAttribute("name", "first_element")	// adding new attribute
+    // }, 3000);
+
+    // // 2 nd method
+    function chnageAttribute(){
+        let h1 = document.getElementById("firstEle");
+        h1.innerHTML = "This is JavaScript";   //innerhtml
+        h1.style.color = "red";  // css 
+        h1.style.fontSize= "50px" // css
+        h1.setAttribute("name", "first_element")	// adding new attribute
+    }
+
+</script>
+
+
+
+</body>
+</html>
