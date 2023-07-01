@@ -6,24 +6,9 @@
     <title>ElementGetByID</title>
 
 </head>
-<body>    
+<body id="body">    
+    
     <div>
-        <h1 id="firstEle">this is example of GetElementById</h1>
-
-
-
-        <button onclick="chnageAttribute()" >Click me to change</button>
-
-
-
-    </div>
-
-
-    <div>
-
-        <p id="bulbInfo">
-            A fluorescent bulb is a glass tube usually filled with argon gas and a little bit of mercury. When turned on, the cathode heats up and sends out electrons.
-        </p>
 
         <img id="bulb" src="https://i.postimg.cc/KjK1wL3c/bulb-off.png" width="300px" height="450px">
 
@@ -34,32 +19,10 @@
     </div>
 
 <script>
-    // // 1 st method
-    // setTimeout(() => {
-    //     let h1 = document.getElementById("firstEle");
-    //     h1.innerHTML = "This is JavaScript";   //innerhtml
-    //     h1.style.color = "red";  // css 
-    //     h1.style.fontSize= "50px" // css
-    //     h1.setAttribute("name", "first_element")	// adding new attribute
-    // }, 3000);
-
-    // // 2 nd method
-    function chnageAttribute(){
-        let h1 = document.getElementById("firstEle");
-        h1.innerHTML = "This is JavaScript";   //innerhtml
-        h1.style.color = "red";  // css 
-        h1.style.fontSize= "50px" // css
-        h1.setAttribute("name", "first_element")	// adding new attribute
-    }
-
     function TurnON(){
         let bulb = document.getElementById("bulb");
 
         bulb.src = "https://i.postimg.cc/6QyTynzr/bulb-on.png" // element attribute change
-
-        let bulbInfo = document.getElementById("bulbInfo");
-        // bulbInfo.innerHTML
-        bulbInfo.style.color = "Green";
 
     }
 
@@ -68,13 +31,7 @@
 
         bulb.src = "https://i.postimg.cc/KjK1wL3c/bulb-off.png" // element attribute change
 
-        let bulbInfo = document.getElementById("bulbInfo");
-        // bulbInfo.innerHTML
-        bulbInfo.style.color = "black";
-
     }
-
-
 </script>
 
 
