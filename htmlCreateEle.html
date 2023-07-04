@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Create</title>
+</head>
+<body id="bodydata">
+
+    <div style="background-color: green; width: auto; height: 500px;" id="mydiv">
+
+    </div>
+
+    <script>
+      let p = document.createElement("p");
+      p.innerHTML = "MY paragraph";
+      let body = document.getElementById("bodydata")
+      body.appendChild(p);
+
+      let h1 = document.createElement("h1");
+      h1.innerHTML= "this is a new header";
+      let div = document.getElementById("mydiv")
+      div.appendChild(h1);
+
+
+      setTimeout(() => {
+        div.removeChild(h1)	
+        let hea = document.createElement("h1");
+        hea.innerHTML = "MY new h1 header";
+        body.replaceChild(hea,p);
+
+
+      }, 3000);
+      document.write("this is document.write example")
+
+
+    </script>
+</body>
+</html>

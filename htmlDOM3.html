@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Elememts By Tag name</title>
+</head>
+<body>
+    
+<Div name="H1 tags">
+    <h2> H2 tag 1 </h2>
+    <h2> H2 tag 2</h2>
+    <h1> H1 tag 1 </h1>
+    <h1> H1 tag 2  </h1>
+    <h1> H1 tag 3  </h1>
+    <h1> H1 tag 4 </h1>
+    <h1> H1 tag 5 </h1>
+
+</Div>
+
+
+<Div name="H2 tags">
+
+    <h2> H2 tag 1 </h2>
+    <h2> H2 tag 2</h2>
+    <h2> H2 tag 3 </h2>
+    <h2> H2 tag 4 </h2>
+    <h2> H2 tag 5</h2>
+
+</Div>
+
+
+
+<script>
+                                                   //  0   1  2
+let allH1 = document.getElementsByTagName("h1");  //  [h1,h1,h1]
+   for(let i = 0 ; i < allH1.length; i++){
+       allH1[i].innerHTML = "My Computer " + (i +1) // html content change
+       allH1[i].style.color = "red"
+
+   }
+                                                     //  0   1  2
+  let allH2 = document.getElementsByTagName("h2");  //  [h2,h2,h2]
+   for(let i = 0 ; i < allH2.length; i++)
+   allH2[i].style.color = "green"
+
+
+</script>
+
+
+</body>
+</html>
