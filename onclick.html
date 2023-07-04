@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript HTML Events</h2>
+    <h3 onclick="this.innerHTML='Ooops!'">Click on this h3 text!</h3>
+
+    <h2 id="h2" onclick="onlClickH1(this)">Click on this text!</h2>
+    
+    <script>
+
+        function onlClickH1(element) {
+            element.innerHTML = 'Ooops!'
+        }
+    </script>
+</body>
+
+</html>
