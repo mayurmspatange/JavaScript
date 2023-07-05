@@ -7,13 +7,45 @@
         style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
         Click Me</div>
 
+
+    <div id="div"
+        style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+        Click Me
+    </div>
+
     <script>
+
+        let  div = document.getElementById("div");
+        div.addEventListener("click",clickEv);
+
+        div.addEventListener("mouseover",mouseover)   
+        div.addEventListener("mouseout",mouseout)   
+        div.addEventListener("mousedown",function down(){
+            console.log("added mousedown lister")
+        })
+
+        function clickEv() {
+            console.log("added mouse click lister")
+        } 
+
+
+        function mouseover() {
+            console.log("added mouseover  lister")
+        } 
+
+
+        function mouseout() {
+            console.log("added mouseout  lister") 
+        } 
+
+
         function mDown(obj) {
             obj.style.backgroundColor = "#1ec5e5";
             obj.innerHTML = "Release Me";
         }
 
         function mUp(obj) {
+            console.log(obj);
             obj.style.backgroundColor = "#D94A38";
             obj.innerHTML = "Thank You";
         }

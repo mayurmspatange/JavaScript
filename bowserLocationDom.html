@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+
+    <p id="demo"></p>
+
+    <hr>
+    <p id="location"></p>
+
+    <hr>
+    <input type="button" value="Load new document" onclick="newDoc()">
+
+
+    <hr>
+    <input type="button" value="Back" onclick="goBack()">
+
+    <input type="button" value="Forward" onclick="goForward()">
+
+
+    <script>
+        document.getElementById("demo").innerHTML =
+            "Screen width is " + screen.width + " Screen Height: " + screen.height + " Available Screen Width: " + screen.availWidth + " Available Screen Height: " + screen.availHeight + " Screen Color Depth: " + screen.colorDepth + " Screen Pixel Depth: " + screen.pixelDepth;
+
+
+
+        document.getElementById("location").innerHTML =
+            "Page location is " + window.location.href + ", Page hostname is " + window.location.hostname + ", Page path is " + window.location.pathname + ", Page protocol is " + window.location.protocol + ", Port number is " + window.location.port;
+    </script>
+
+
+    <script>
+        function newDoc() {
+            window.location.assign("https://www.w3schools.com")
+            window.open("https://www.w3schools.com")
+
+        }
+    </script>
+
+
+<script>
+    function goBack() {
+      window.history.back()
+    }
+
+
+    function goForward() {
+  window.history.forward()
+}
+    </script>
+
+
+</body>
+
+</html>
