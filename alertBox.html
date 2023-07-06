@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JavaScript Alert</h2>
+
+    <button onclick="myFunction()">Open Alert</button>
+
+    <button onclick="myConfirm()">Confirm Box</button>
+
+
+    <script>
+        function myFunction() {
+            alert("I am an alert box!");
+        }
+
+        function myConfirm() {
+            let res = confirm("are you sure to delete");
+            if (res) {
+                console.log("delete user from DB");
+            }
+            else {
+                console.log("no need to delete user from DB");
+            }
+        }
+
+
+        let person = prompt("Please enter your name", "Harry Potter");
+        let text;
+        if (person == null || person == "") {
+            text = "User cancelled the prompt.";
+        } else {
+            text = "Hello " + person + "! How are you today?";
+        }
+        console.log("text: ",text);
+
+    </script>
+</body>
+
+</html>
